@@ -130,7 +130,7 @@ keywords: "sql, data, dataanalysis, analysis, excel, analyst, business analyst, 
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-page-col: "#1a1a2e"
+page-col: "#d4d4d4"
 text-col: "#f5f5f5"
 link-col: "#ff6f61"
 hover-col: "#ff6f61"
