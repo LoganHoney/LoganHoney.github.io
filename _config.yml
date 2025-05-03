@@ -10,8 +10,7 @@
 ############################
 
 # Name of website
-title: My Awesome website
-
+title: Tech Insights
 # Your name to show in the footer
 author: Logan Honey
 
@@ -123,7 +122,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "sql, data, dataanalysis, analysis, excel, analyst, business analyst"
+keywords: "sql, data, dataanalysis, analysis, excel, analyst, business analyst, systems analyst"
 
 ######################################
 # --- Colours / background image --- #
@@ -131,17 +130,17 @@ keywords: "sql, data, dataanalysis, analysis, excel, analyst, business analyst"
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-page-col: "#000000"
-text-col: "#FFFFFF"
-link-col: "#03aee5"
-hover-col: "#03aee5"
-navbar-col: "#03aee5"
-navbar-text-col: "#404040"
+page-col: "#1a1a2e"
+text-col: "#f5f5f5"
+link-col: "#ff6f61"
+hover-col: "#ff6f61"
+navbar-col: "#f5f5f5"
+navbar-text-col: "#03aee5"
 navbar-border-col: "#DDDDDD"
-footer-col: "#03aee5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#03aee5"
+footer-col: "#f5f5f5"
+footer-text-col: "#03aee5"
+footer-link-col: "#ff6f61"
+footer-hover-col: "ff6f61"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
