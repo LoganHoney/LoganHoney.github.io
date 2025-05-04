@@ -4,6 +4,8 @@ title: Relational Databases
 subtitle: A closer look at what makes them powerful
 cover-img: /assets/img/SQLtables.jpg
 share-img: /assets/img/SQLtables.jpg
+tags: [sql, relational databses, data]
+auhtor: Logan Honey
 ---
 
 ## What are relational databases?
