@@ -40,8 +40,12 @@ With these table being linked by **_Customer_ID_**, it can easily be seen which 
 
 #### Data Integrity
 
-Data integrity is preserved by using **primary keys**. Primary keys are often system generated and not user defined. This key needs to be unique unable to be duplicated. All information in any given table is associated with a primary key. For example: Driver License Number and Social Security Number. These two numbers cannot be duplicated and many pieces of information are connected to them. In the example of a Driver License Number, information such as First_Name, Last_Name, DOB, Height, Gender, and Address are associated with it. 
+Data integrity is preserved by using **primary keys**. Primary keys are often system generated and not user defined because it must be unique (no duplication) All information in any given table is associated with a primary key. For example: Driver License Number and Social Security Number. These two numbers cannot be duplicated and many pieces of information are connected to them. 
 
 | Driver License Number | First_Name | Last_Name | DOB | Height | Gender | Address |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | D500-000-000 | John | Doe | 05/13/1995 | 5'10" | M | 123 Maple Dr. |
+
+The driver license number is the primary key because it is unique and cannot be duplicated. There could be multiple individuals with the name of John Doe. There could be multiple people born on 05/13/1995. There could also be multiple people living at 123 Maple St. 
+
+
