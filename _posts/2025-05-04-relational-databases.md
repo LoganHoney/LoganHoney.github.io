@@ -46,6 +46,6 @@ Data integrity is preserved by using **primary keys**. Primary keys are often sy
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | D500-000-000 | John | Doe | 05/13/1995 | 5'10" | M | 123 Maple Dr. |
 
-The driver license number is the primary key because it is unique and cannot be duplicated. There could be multiple individuals with the name of John Doe. There could be multiple people born on 05/13/1995. There could also be multiple people living at 123 Maple St. 
+The driver license number is the primary key because it is unique and cannot be duplicated. In contrast, there could be multiple individuals with the name of John Doe, born on 05/13/1995, or living at 123 Maple St. The point is, each row in a table must have a unique identifier to maintain data integrity.
 
 
