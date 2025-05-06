@@ -39,10 +39,10 @@ All data in these databases are connected or **_related_**. How this is done is 
 
 By linking these tables through Customer_ID, it becomes clear which customer placed each order. This facilitates quick transactions and ensures that customers receive the products they ordered. Consider the potential applications; this concept extends beyond just customers and orders.
 
--**Health Insurance:** It can track which claims have been submitted by an individual.
--**Entertainment:** It can be used to identify what movies have been purchased through an individuals Netflix account.
--**Inventory Management:** It can be  used with a barcode system and monitor the quantity of products on the shelves and determine when it needs to be restocked.
--**Education:** It can associate students with their course enrollments and grades, helping to track academic progress.
+- **Health Insurance:** It can track which claims have been submitted by an individual.
+- **Entertainment:** It can be used to identify what movies have been purchased through an individuals Netflix account.
+- **Inventory Management:** It can be  used with a barcode system and monitor the quantity of products on the shelves and determine when it needs to be restocked.
+- **Education:** It can associate students with their course enrollments and grades, helping to track academic progress.
 
 Here is an example of structure using a small database:
 
