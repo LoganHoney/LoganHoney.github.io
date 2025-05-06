@@ -22,7 +22,7 @@ All data in these databases are connected or **_related_**. How this is done is 
 
 ##### Customer Table
 
-| **Customer_ID** | First_Name | Last_Name | Street | City | State | Zip |
+| **C_ID** | First_Name | Last_Name | Street | City | State | Zip |
 | :---- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 01 | Wallace | Cleaver | 211 Pine St | Mayfield | OH | 12345 |
 | 02 | Michael | Scott | 473 Apple Ln | Scranton | PA | 16754 |
@@ -30,22 +30,34 @@ All data in these databases are connected or **_related_**. How this is done is 
 
 ##### Orders Table
 
-| Order_ID | **Customer_ID** | Item | Color | Quantity | Unit Price |
+| Order_ID | **C_ID** | Item | Color | Quantity | Unit Price |
 | :--------| :--- | :--- | :--- | :--- | :--- |
 | 1457 | 03 | Desk Chair | Black | 1 | $250 |
 | 1458 | 01 | Fountain Pens | Blue | 5 | $1 |
 | 1459 | 02 | Coffee Mug | White | 2 | $10 |
 
-With these table being linked by **_Customer_ID_**, it can easily be seen which customer placed which order. This allows for fast transactions and ensures that the customers receive the products that they ordered. Think about the possibilities, this doesn't just apply to customers and orders. It could apply to any number of systems or buisiness models. Health Insurance: Which claims have been filed by an individual. Entertainment: What email account was used to create a Netflix account. Inventory: How much of a certain product is on the shelves and when does it need to be restocked. 
+
+By linking these tables through Customer_ID, it becomes clear which customer placed each order. This facilitates quick transactions and ensures that customers receive the products they ordered. Consider the potential applications; this concept extends beyond just customers and orders.
+
+-**Health Insurance:** It can track which claims have been submitted by an individual.
+-**Entertainment:** It can be used to identify what movies have been purchased through an individuals Netflix account.
+-**Inventory Management:** It can be  used with a barcode system and monitor the quantity of products on the shelves and determine when it needs to be restocked.
+-**Education:** It can associate students with their course enrollments and grades, helping to track academic progress.
+
+Here is an example of structure using a small database:
+
+![DatabaseExample](https://loganhoney.github.io/assets/img/dogdatabase.png)
 
 #### Data Integrity
 
-Data integrity is preserved by using **primary keys**. Primary keys are often system generated and not user defined because it must be unique (no duplication) All information in any given table is associated with a primary key. For example: Driver License Number and Social Security Number. These two numbers cannot be duplicated and many pieces of information are connected to them. 
+Data integrity is maintained through the use of primary keys. These keys are typically system-generated rather than user-defined, as they must be unique to prevent duplication. Each piece of information in a table is linked to a primary key. For instance, consider the Driver License Number and Social Security Number; both of these identifiers must be unique, and various data points are associated with them.
 
-| Driver License Number | First_Name | Last_Name | DOB | Height | Gender | Address |
+Here’s an example of a table that illustrates this concept: 
+
+| DL Number | First_Name | Last_Name | DOB | Height | Gender | Address |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | D500-000-000 | John | Doe | 05/13/1995 | 5'10" | M | 123 Maple Dr. |
 
-The driver license number is the primary key because it is unique and cannot be duplicated. In contrast, there could be multiple individuals with the name of John Doe, born on 05/13/1995, or living at 123 Maple St. The point is, each row in a table must have a unique identifier to maintain data integrity.
+The driver license number is the primary key because it is unique and cannot be duplicated. In contrast, there could be multiple individuals with the name of John Doe, lots of people could have been born on 05/13/1995, or a whole family of drivers could be living at 123 Maple St. The point is, each row in a table must have a unique identifier to maintain data integrity.
 
 
