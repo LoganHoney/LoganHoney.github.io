@@ -50,14 +50,19 @@ Here is an example of structure using a small database:
 
 #### Data Integrity
 
-Data integrity is maintained through the use of primary keys. These keys are typically system-generated rather than user-defined, as they must be unique to prevent duplication. Each piece of information in a table is linked to a primary key. For instance, consider the Driver License Number and Social Security Number; both of these identifiers must be unique, and various data points are associated with them.
+Data integrity is maintained through the use of primary keys. These keys are typically system-generated rather than user-defined, as they must be unique to prevent duplication. Each piece of information in a table is linked to a primary key. For instance, consider a Driver License Number or Social Security Number; both of these identifiers must be unique, and various data points are associated with them.
 
 Here’s an example of a table that illustrates this concept: 
 
-| DL Number | First_Name | Last_Name | DOB | Height | Gender | Address |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| D500-000-000 | John | Doe | 05/13/1995 | 5'10" | M | 123 Maple Dr. |
+| Tag# | Name | Breed | Color | Age | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| 1573 | Fido | Beagle | Brown/White | 1.5 | 
+| 1582 | Fido | Beagle | Brown/White | 1.5 | 
+| 2684 | Rex | Pekingese | White | 9 | 
+| 3795 | Bubbles | Rottweiler | Black | 5 | 
+| 4806 | Cujo | Chihuahua | Gold | 4 | 
 
-The driver license number is the primary key because it is unique and cannot be duplicated. In contrast, there could be multiple individuals with the name of John Doe, lots of people could have been born on 05/13/1995, or a whole family of drivers could be living at 123 Maple St. The point is, each row in a table must have a unique identifier to maintain data integrity.
+
+The **_Tag#_** is the primary key because it is unique and cannot be duplicated. In this table there are two **Beagles** named **Fido** that are **Brown/White** and **1.5** years old. In every way, these dogs are identical except for their **_Tag#_**. This unique number allows the two dogs to be distinguished from one another in the database. Now any information such as vaccines, medications, or the kennel they are in can be linked to the **_Tag#_** and not just the name or breed. The point is, each row in a table must have a unique identifier to maintain data integrity. 
 
 
