@@ -20,7 +20,7 @@ Not only do relational databases store vast amounts of data, data is also stored
 #### Clear Relationships
 All data in these databases are connected or **_related_**. How this is done is through the aforementioned **_foreign keys_**. A foreign key can be defined as a field that exsists in more than one table. This alows all of the data in both tables to be tied together. This is the driving force between a relational database's power. I believe that an example would be of benefit:
 
-##### Customer Table
+###### Customer Table
 
 | **C_ID** | First_Name | Last_Name | Street | City | State | Zip |
 | :---- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -28,7 +28,7 @@ All data in these databases are connected or **_related_**. How this is done is 
 | 02 | Michael | Scott | 473 Apple Ln | Scranton | PA | 16754 |
 | 03 | Ray | Barone | 647 Robin Dr | New York | NY | 21257 |
 
-##### Orders Table
+###### Orders Table
 
 | Order_ID | **C_ID** | Item | Color | Quantity | Unit Price |
 | :--------| :--- | :--- | :--- | :--- | :--- |
