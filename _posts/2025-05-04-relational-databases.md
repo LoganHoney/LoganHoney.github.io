@@ -37,7 +37,7 @@ All data in these databases are connected or **_related_**. How this is done is 
 | 1459 | 02 | Coffee Mug | White | 2 | $10 |
 
 
-By linking these tables through Customer_ID, it becomes clear which customer placed each order. This facilitates quick transactions and ensures that customers receive the products they ordered. Consider the potential applications; this concept extends beyond just customers and orders.
+By linking these tables through **_C_ID_**, it becomes clear which customer placed each order. This facilitates quick transactions and ensures that customers receive the products they ordered. Consider the potential applications; this concept extends beyond just customers and orders.
 
 - **Health Insurance:** It can track which claims have been submitted by an individual.
 - **Entertainment:** It can be used to identify what movies have been purchased through an individuals Netflix account.
@@ -64,5 +64,20 @@ Here’s an example of a table that illustrates this concept:
 
 
 The **_Tag#_** is the primary key because it is unique and cannot be duplicated. In this table there are two **Beagles** named **Fido** that are **Brown/White** and **1.5** years old. In every way, these dogs are identical except for their **_Tag#_**. This unique number allows the two dogs to be distinguished from one another in the database. Now any information such as vaccines, medications, or the kennel they are in can be linked to the **_Tag#_** and not just the name or breed. The point is, each row in a table must have a unique identifier to maintain data integrity. 
+
+Another way that relational databases maintain data integrity is through **Domain Integrity**. Domain integrity involved defining valid values for a column, such as data types, formats, and ranges. Constraints like CHECK constraints ensure that only valid data is entered. Below is an example:
+``` sql
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    UserName VARCHAR(50),
+    Age INT CHECK (Age > 10)
+);
+```
+
+This exemplifies a few points of Data Integrity. 
+- It specifies **_UserID_** as the primary key.
+- It specifies that **_UserName_** can have up to 50 characters and be any character.
+- It specifies **_Age_** as an integer and CHECKS to make sure that the user is older than 10.
+  
 
 
