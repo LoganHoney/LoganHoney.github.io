@@ -50,6 +50,7 @@ Here is an example of structure using a small database:
 
 #### Data Integrity
 
+##### Primary Keys
 Data integrity is maintained through the use of primary keys. These keys are typically system-generated rather than user-defined, as they must be unique to prevent duplication. Each piece of information in a table is linked to a primary key. For instance, consider a Driver License Number or Social Security Number; both of these identifiers must be unique, and various data points are associated with them.
 
 Here’s an example of a table that illustrates this concept: 
@@ -65,19 +66,28 @@ Here’s an example of a table that illustrates this concept:
 
 The **_Tag#_** is the primary key because it is unique and cannot be duplicated. In this table there are two **Beagles** named **Fido** that are **Brown/White** and **1.5** years old. In every way, these dogs are identical except for their **_Tag#_**. This unique number allows the two dogs to be distinguished from one another in the database. Now any information such as vaccines, medications, or the kennel they are in can be linked to the **_Tag#_** and not just the name or breed. The point is, each row in a table must have a unique identifier to maintain data integrity. 
 
+##### Foreign Keys
+
+
+##### Domain Integrity
+
 Another way that relational databases maintain data integrity is through **Domain Integrity**. Domain integrity involved defining valid values for a column, such as data types, formats, and ranges. Constraints like CHECK constraints ensure that only valid data is entered. Below is an example:
 ``` sql
 CREATE TABLE Users (
     UserID INT PRIMARY KEY,
-    UserName VARCHAR(50),
+    UserName VARCHAR(50) NOT NULL,
     Age INT CHECK (Age > 10)
 );
 ```
 
-This exemplifies a few points of Data Integrity. 
-- It specifies **_UserID_** as the primary key.
-- It specifies that **_UserName_** can have up to 50 characters and be any character.
+
+This `CREATE TABLE` statement demonstrates several aspects of domain integrity.
+- It specifies **_UserID_** as the primary key (by default, unabe to be a NULL Value)
+- It specifies **_UserName_** as a variable character field with a maximum of 50 characters that cannot be NULL
 - It specifies **_Age_** as an integer and CHECKS to make sure that the user is older than 10.
+
+If a number of 10 or less is entered into the **_Age_** field, you would receive an error similar to `ERROR: new row for relation "Users" violates check constraint "Users_Age_check"`
+
   
 
 
