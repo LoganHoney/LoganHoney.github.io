@@ -22,19 +22,12 @@ All data in these databases are connected or **_related_**. How this is done is 
 
 ###### Customer Table
 
-| **C_ID** | First_Name | Last_Name | Street | City | State | Zip |
-| :---- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 01 | Wallace | Cleaver | 211 Pine St | Mayfield | OH | 12345 |
-| 02 | Michael | Scott | 473 Apple Ln | Scranton | PA | 16754 |
-| 03 | Ray | Barone | 647 Robin Dr | New York | NY | 21257 |
+![CustomerTable](https://loganhoney.github.io/assets/img/customerstable.png)
+
 
 ###### Orders Table
 
-| Order_ID | **C_ID** | Item | Color | Quantity | Unit Price |
-| :--------| :--- | :--- | :--- | :--- | :--- |
-| 1457 | 03 | Desk Chair | Black | 1 | $250 |
-| 1458 | 01 | Fountain Pens | Blue | 5 | $1 |
-| 1459 | 02 | Coffee Mug | White | 2 | $10 |
+![OrdersTable](https://loganhoney.github.io/assets/img/orderstable.png)
 
 
 By linking these tables through **_C_ID_**, it becomes clear which customer placed each order. This facilitates quick transactions and ensures that customers receive the products they ordered. Consider the potential applications; this concept extends beyond just customers and orders.
