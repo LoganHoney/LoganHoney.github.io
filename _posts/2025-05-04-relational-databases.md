@@ -49,13 +49,7 @@ Data integrity is maintained through the use of primary keys. These keys are typ
 
 Here’s an example of a table that illustrates this concept: 
 
-| Tag# | Name | Breed | Color | Age | 
-| :--- | :--- | :--- | :--- | :--- | :--- | 
-| 1573 | Fido | Beagle | Brown/White | 1.5 | 
-| 1582 | Fido | Beagle | Brown/White | 1.5 | 
-| 2684 | Rex | Pekingese | White | 9 | 
-| 3795 | Bubbles | Rottweiler | Black | 5 | 
-| 4806 | Cujo | Chihuahua | Gold | 4 | 
+![DogTable](https://loganhoney.github.io/assets/img/dogtable.png)
 
 
 The **_Tag#_** is the primary key because it is unique and cannot be duplicated. In this table there are two **Beagles** named **Fido** that are **Brown/White** and **1.5** years old. In every way, these dogs are identical except for their **_Tag#_**. This unique number allows the two dogs to be distinguished from one another in the database. Now any information such as vaccines, medications, or the kennel they are in can be linked to the **_Tag#_** and not just the name or breed. The point is, each row in a table must have a unique identifier to maintain data integrity. 
