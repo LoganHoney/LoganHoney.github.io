@@ -46,7 +46,7 @@ By linking these tables through **_C_ID_**, it becomes clear which customer plac
 
 Here is an example of structure using a small database:
 
-![DatabaseExample](https://loganhoney.github.io/assets/img/dogdatabase.png)
+![DatabaseExample](https://loganhoney.github.io/assets/img/empdatabase.png)
 
 #### Data Integrity
 How important is good information? In business, the smallest details can influnce big decisions. Decisions made off of inconsistent data can be have wildly unintended results. That's why we must preserve data integrity with good database management skills. This can be achieved through proper use of **primary keys**, **foreign keys**, and **Data Validation**
