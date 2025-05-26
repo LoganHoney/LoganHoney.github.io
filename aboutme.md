@@ -7,7 +7,7 @@ I am fairly new to tech so I am in no ways an expert on anything. I just like to
 
 I always appreciate when I find a robust yet clear tutorial wether I am trying to solve a problem or just reading for curiosity. I try to replicate that same balance with the content I provide. Let's be honest, no one has endless time for research, especially when you need a quick answer. There are two categories that my content falls into: **Problem Solving** and **Explorative Writing**
 
-###### Problem Solving
+##### Problem Solving
 This content is based on issues that I have run into. If I find a solution to something that was problematic, I will share the solution as well as the troubleshooting steps that were used to arrive at the solution.
 
 ##### Explorative Writing
