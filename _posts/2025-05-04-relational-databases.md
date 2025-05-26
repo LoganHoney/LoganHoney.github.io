@@ -85,9 +85,9 @@ CREATE TABLE Users (
 
 
 This `CREATE TABLE` statement demonstrates several aspects of domain integrity.
-It specifies **_UserID_** as the primary key (which cannot be NULL and must be unique).
-It defines **_UserName_** as a variable character field with a maximum of 50 characters that cannot be NULL.
-It ensures **_Age_** is an integer and must be greater than 10.
+ - It specifies **_UserID_** as the primary key (which cannot be NULL and must be unique).
+ - It defines **_UserName_** as a variable character field with a maximum of 50 characters that cannot be NULL.
+ - It ensures **_Age_** is an integer and must be greater than 10.
 
 If a value of 10 or less is entered into the **_Age_** field, the system will return an error similar to:
 `ERROR: new row for relation "Users" violates check constraint "Users_Age_check"`
