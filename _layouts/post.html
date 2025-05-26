@@ -33,7 +33,6 @@ layout: base
 
       {% if page.before-content %}
         <div class="before-content">
-          {% include reading-time.html %}
           {% for file in page.before-content %}
             {% include {{ file }} %}
           {% endfor %}
