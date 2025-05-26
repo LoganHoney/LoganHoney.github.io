@@ -933,6 +933,7 @@ pre {
   border: unset;
 }
 
+
 .gist, .gist-file table tr td {
   border: unset;
 }
@@ -1123,4 +1124,26 @@ pre {
   #nav-search-text {
     display: inline-block;
   }
+}
+
+// Stuff that I have added
+.callout {
+  border-left: 5px solid #f0ad4e;
+  background-color: #fff8e5;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.callout.warning {
+  border-color: #f0ad4e;
+  background-color: #fff8e5;
+}
+
+.callout strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #b36b00;
 }
