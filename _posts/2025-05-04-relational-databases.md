@@ -6,6 +6,7 @@ cover-img: /assets/img/SQLtables.jpg
 share-img: /assets/img/SQLtables.jpg
 tags: [sql, relational databases, data]
 author: Logan Honey
+{% include reading-time.html %}
 ---
 
 ## What are relational databases?
