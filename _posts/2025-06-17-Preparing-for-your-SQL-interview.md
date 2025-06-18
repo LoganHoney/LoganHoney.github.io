@@ -12,3 +12,11 @@ author: Logan Honey
 ---
 # Not sure where to start? Perfect.
 Whether you are new to the field or you are just refreshing yourself before the interview, I know there is something here for you. We're going to cover the basics as well as a few easy-to-implement advanced skills. After all, we need to stand out and showcase our potential. Let's get started.
+
+## Structure
+SQL stands for Structured Query Language. As such, understanding these basic building blocks lays the foundation to build complex queries.
+```sql
+SELECT (Data)
+FROM (Location)
+WHERE (Condition)
+```
