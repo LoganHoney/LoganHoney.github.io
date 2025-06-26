@@ -22,13 +22,13 @@ FROM (Table)
 WHERE (Condition)
 ```
 #### SELECT
-The first word in nearly every query. SELECT is where we tell the database what data to retrieve. It is also here that we often put the finishing touches on our query such as minor data manipulation. Personally, I do not primarily focus on SELECT at first unless I am familiar with the particular table I am querying from. Although it is necesary, it is not my focus. This will make better sense in a second, I promise.
+The first word in nearly every query. `SELECT` is where we tell the database what data to retrieve. It is also here that we often put the finishing touches on our query such as minor data manipulation. Personally, I do not primarily focus on `SELECT` at first unless I am familiar with the particular table I am querying from. Although it is necesary, it is not my focus. This will make better sense in a second, I promise.
 
 #### FROM
-We should already have a basic understanding of what we are trying to accomplish with our query. However, we may not always know where to start. Thus begins the quest of searching for data. If you've done this, congratulations! You are now a data digger. In my experience, this step is often times the longest as it is a lot of trial and error and using your judgment as to which table(s) are best to produce your desired outcome. I've found a few helpful tricks to help dig for data and we'll cover them in the **_Tips & Tricks_** section.
+We should already have a basic understanding of what we are trying to accomplish with our query. However, we may not always know where to start. Thus begins the quest of searching for data. If you've done this, congratulations! You are now a data digger. In my experience, this step is often times the longest as it is a lot of trial and error and using your judgment as to which table(s) are best to produce your desired outcome. I've found a few helpful tricks to help dig for data and we'll cover them in the **_Tips & Tricks_** section. For now, `FROM` is the section where we specify from which table to query. We will also tack on other tables as the complexity of the query expands using `JOIN`.
 
 #### WHERE
-This is _where_ the magic happens. Any criteria that we want to constrain or filter the data by is specified in the WHERE clause. For example, if I want to find the first names of everyone in accounting, my query may look something like this:
+This is **_where_** the magic happens. Any criteria that we want to constrain or filter the data by is specified in the WHERE clause. For example, if I want to find the first names of everyone in accounting, my query may look something like this:
 ```sql
 SELECT firstname
 FROM Employee
