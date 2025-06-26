@@ -11,10 +11,10 @@ author: Logan Honey
 
 ---
 # Not sure where to start? Perfect.
-Whether you are new to the field or you are just refreshing yourself before the interview, I know there is something here for you. We're going to cover the basics as well as a few easy-to-implement advanced skills. After all, we need to stand out and showcase our potential. Let's get started.
+Whether you are new to the data field, refreshing yourself before the interview, or you are just scratching that curiosity itch. I hope tp provide you with some thoughts you can take with you. We're going to cover the basics of SQL as well as a few easy-to-implement advanced skills. After all, we need to stand out and showcase our potential. The basics of SQL are incredibly easy to grasp and they lay the foundation for your career in Data. 
 
 ## The Basics
-SQL stands for Structured Query Language. As such, understanding these basic building blocks lays the foundation to build complex queries. Here are the three fundamental concepts of every query:
+SQL stands for **_Structured Query Language_**. It is a language used to update, create, maintain, and query databases. At the most besic deconstruction, there are three fundamental concepts found in every query:
 
 ```sql
 SELECT (Data)
