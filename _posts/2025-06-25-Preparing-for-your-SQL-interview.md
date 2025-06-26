@@ -68,7 +68,9 @@ SELECT *
 FROM Employee
 ```
 Yields:
-| ID | firstName | lastName | Email | Salary | Address | 
+| ID | firstName | lastName | Email | Salary | Address |
+|----|--------|-------|-------|------|-----|
+|  1 | John | Doe | jdoe@email.com | 60k | 123 Maple St.|
 
 
 #### Select TOP 1000
