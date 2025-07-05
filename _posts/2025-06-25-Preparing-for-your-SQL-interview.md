@@ -53,7 +53,7 @@ To excel in any role, focus on the following:
 By bridging the gap between end-users and development, you will position yourself as a more valuable candidate or employee. Remember, SQL is a development language, but effective communication is what truly drives successful outcomes.
 
 ## Tips & Tricks
-Below are some helful tips and tricks that I have used over my career. They range from very basic to more advanced. I can assure that each one has a particular use-case in which it will shine and not one-size-fits-all, **_but it may get you close._**
+Below are some helful tips and tricks that I have used over my career. They range from very basic to more advanced. I can assure that each one has a particular use-case in which it will shine and not one-size-fits-all, **_but it may get you close._1
 
 #### Select *
 ```sql
@@ -72,13 +72,30 @@ Yields:
 | ID | firstName | lastName | Email | Salary | Address |
 |----|--------|-------|-------|------|-----|
 |  1 | John | Doe | jdoe@email.com | 60k | 123 Maple St.|
+|  2 | Jane | Jones | jjones@email.com | 65k | 120 Oak Ave. |
 
-
-#### Select TOP 1000
+Whereas this:
 ```sql
-SELECT TOP (1000)
-FROM (Table)
+SELECT firstName
+FROM Employee
 ```
+Yields:
+
+| firstName |
+|----|
+| John | 
+| Jane | 
+
+
 #### Script View
+One extremely hellful tool is to script views. Views are similar tp tables in the fact that they can be queried from however there is a huge distinction between views and tables. 
+- **Tables store raw data:** When data is written to a database, it is stored in a table. Tables are more concrete and are a central part of the database functionality. 
+- **Views _reflect_ tables:** Views do not store data, rather they reflect the data that is stored in the tables they reference
+
+If it is difficult to find the data you need, consider scripting a view. For example:
+_I'm looking for homogeneous data. This data is very closely related and one would assume that it is all stored within the same table. I cannot find the table. However, I found a view that contains 3 out of the 5 data points I am searching for. I decide to script the view to quickly see what tables were used to construct that view. I may just find what I am looking for._ 
+###### SSMS
+
+###### MySQL
 
 #### View Dependencies of Tables and Views
