@@ -94,8 +94,9 @@ One extremely hellful tool is to script views. Views are similar tp tables in th
 
 If it is difficult to find the data you need, consider scripting a view. For example:
 _I'm looking for homogeneous data. This data is very closely related and one would assume that it is all stored within the same table. I cannot find the table. However, I found a view that contains 3 out of the 5 data points I am searching for. I decide to script the view to quickly see what tables were used to construct that view. I may just find what I am looking for._ 
+
 ###### SSMS
-
+![ScriptViewSSMS](https://loganhoney.github.io/assets/img/SSMSscriptview.png)
 ###### MySQL
+![ScriptViewMySQL](https://loganhoney.github.io/assets/img/MySQLscriptview.png)
 
-#### View Dependencies of Tables and Views
