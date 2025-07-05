@@ -62,7 +62,7 @@ FROM (Table)
 ```
 This is one of the first and simplest tricks I learned and I still use it everytime I am building queries. This goes back to what I said previously about not primarily focusing on `SELECT`. More often than not, finding the data is the most important aspect of any data role. Using `SELECT *` allows me to grab all columns of a table. By doing this I can quickly see if this table is one that can help me achieve whatever goal I am trying to achieve. If I were looking for emloyee addresses:
 
-This: 
+
 ```sql
 SELECT *
 FROM Employee
@@ -74,18 +74,19 @@ Yields:
 |  1 | John | Doe | jdoe@email.com | 60k | 123 Maple St.|
 |  2 | Jane | Jones | jjones@email.com | 65k | 120 Oak Ave. |
 
-Whereas this:
+Whereas,
 ```sql
-SELECT firstName
+SELECT Address
 FROM Employee
 ```
 Yields:
 
 | firstName |
 |----|
-| John | 
-| Jane | 
+| 123 Maple St. | 
+| 120 Oak Ave. | 
 
+Using `SELECT *` saves time by needing to type less *_and_* gives you the most full picture of a table or view. A win-win.
 
 #### Script View
 One extremely hellful tool is to script views. Views are similar tp tables in the fact that they can be queried from however there is a huge distinction between views and tables. 
@@ -93,10 +94,11 @@ One extremely hellful tool is to script views. Views are similar tp tables in th
 - **Views _reflect_ tables:** Views do not store data, rather they reflect the data that is stored in the tables they reference
 
 If it is difficult to find the data you need, consider scripting a view. For example:
+
 _I'm looking for homogeneous data. This data is very closely related and one would assume that it is all stored within the same table. I cannot find the table. However, I found a view that contains 3 out of the 5 data points I am searching for. I decide to script the view to quickly see what tables were used to construct that view. I may just find what I am looking for._ 
 
-###### SSMS
+###### Script View In SSMS
 ![ScriptViewSSMS](https://loganhoney.github.io/assets/img/SSMSscriptview.png)
-###### MySQL
+###### Script View In MySQL
 ![ScriptViewMySQL](https://loganhoney.github.io/assets/img/MySQLscriptview.png)
 
